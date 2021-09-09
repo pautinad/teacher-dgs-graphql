@@ -1,0 +1,20 @@
+schema {
+    query: Query
+}
+
+type Query {
+    teacher(name:String) : Teacher
+}
+
+type Address {
+    street: String!,
+    city:   String!,
+    zipcode: Int!
+}
+
+type Teacher {
+    name: String!
+    age: Int!
+    phone: String
+    address: Address!
+}
